@@ -1,9 +1,8 @@
 "use client";
 
-import PropTypes from 'prop-types';
-import { useState } from 'react';
-import Image from 'next/image';
-
+import PropTypes from "prop-types";
+import Image from "next/image";
+import Contact from "../app/contact/page";
 interface FooterProps {
     devDotTo?: string;
     email?: string;
@@ -12,14 +11,13 @@ interface FooterProps {
     linkedIn?: string;
     medium?: string;
     name?: string;
-    primaryColor?: string;
     twitter?: string;
     youTube?: string;
     facebook?: string;
     whatsapp?: string;
 }
 
-const Footer = ({
+const Footer: React.FC<FooterProps> = ({
     devDotTo,
     email = "",
     gitHub,
@@ -27,125 +25,29 @@ const Footer = ({
     linkedIn,
     medium,
     name = "Your Name",
-    primaryColor,
     twitter,
     youTube,
     facebook,
     whatsapp,
-}: FooterProps) => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = event.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        if (email) {
-            window.location.href = `mailto:${email}?subject=Contacting You&body=${encodeURIComponent(formData.message)}`;
-        }
-    };
-
+}) => {
     return (
         <footer
             id="footer"
             style={{
                 display: "flex",
                 flexDirection: "column",
+                borderTop: "1px solid #02e0fd",
                 alignItems: "center",
                 gap: "2.5rem",
                 padding: "5rem 0 3rem",
-                backgroundColor: "#070707",
+                backgroundColor: "#000000",
                 width: "100vw",
                 textAlign: "center",
                 animation: "fadeIn 1s ease-in-out",
             }}
         >
-            <div style={{ textAlign: "center", width: "100%", maxWidth: "600px" }}>
-                <h2>Contact Me</h2>
-                <p>If you have any questions or just want to get in touch, feel free to send me a message:</p>
-                <form id="contact-form" onSubmit={handleSubmit} style={{ width: "100%" }}>
-                    <div style={{ marginBottom: "1rem" }}>
-                        <label htmlFor="name">Name:</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                            placeholder="Enter your name"
-                            style={{
-                                width: "100%",
-                                padding: "0.75rem",
-                                borderRadius: "5px",
-                                border: "1px solid #19acc9",
-                                transition: "border-color 0.3s, box-shadow 0.3s",
-                            }}
-                        />
-                    </div>
+            {/* <Contact email={email} /> */}
 
-                    <div style={{ marginBottom: "1rem" }}>
-                        <label htmlFor="email">Email:</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                            placeholder="Enter your email"
-                            style={{
-                                width: "100%",
-                                padding: "0.75rem",
-                                borderRadius: "5px",
-                                border: "1px solid #13adcf",
-                                transition: "border-color 0.3s, box-shadow 0.3s",
-                            }}
-                        />
-                    </div>
-
-                    <div style={{ marginBottom: "1rem" }}>
-                        <label htmlFor="message">Message:</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                            placeholder="Enter your message"
-                            style={{
-                                width: "100%",
-                                padding: "0.75rem",
-                                borderRadius: "5px",
-                                border: "1px solid #14a0c7",
-                                transition: "border-color 0.3s, box-shadow 0.3s",
-                            }}
-                        />
-                    </div>
-
-                    <button
-                        type="submit"
-                        style={{
-                            padding: "0.75rem 2rem",
-                            borderRadius: "5px",
-                            backgroundColor: "#0ed0de",
-                            color: "#060606",
-                            border: "1px solid #000000",
-                            cursor: "pointer",
-                            marginTop: "1rem",
-                            transition: "background-color 0.3s, transform 0.3s",
-                        }}
-                    >
-                        Send
-                    </button>
-                </form>
-            </div>
             <p>Follow me on social media:</p>
             <div
                 style={{
@@ -189,11 +91,7 @@ const Footer = ({
                     </a>
                 )}
                 {instagram && (
-                    <a
-                        href={`https://www.instagram.com/${instagram}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/images/socials/instagram.svg"
                             alt="Instagram"
@@ -204,11 +102,7 @@ const Footer = ({
                     </a>
                 )}
                 {linkedIn && (
-                    <a
-                        href={`https://www.linkedin.com/in/${linkedIn}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/images/socials/linkedin.svg"
                             alt="LinkedIn"
@@ -241,11 +135,7 @@ const Footer = ({
                     </a>
                 )}
                 {youTube && (
-                    <a
-                        href={`https://www.youtube.com/c/${youTube}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href={`https://www.youtube.com/c/${youTube}`} target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/images/socials/youtube.svg"
                             alt="YouTube"
@@ -256,11 +146,7 @@ const Footer = ({
                     </a>
                 )}
                 {facebook && (
-                    <a
-                        href={`https://www.facebook.com/${facebook}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href={`https://www.facebook.com/${facebook}`} target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/images/socials/facebook.svg"
                             alt="Facebook"
@@ -271,11 +157,7 @@ const Footer = ({
                     </a>
                 )}
                 {whatsapp && (
-                    <a
-                        href={`https://wa.me/${whatsapp}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/images/socials/whatsapp.svg"
                             alt="WhatsApp"
@@ -301,7 +183,6 @@ Footer.propTypes = {
     linkedIn: PropTypes.string,
     medium: PropTypes.string,
     name: PropTypes.string,
-    primaryColor: PropTypes.string,
     twitter: PropTypes.string,
     youTube: PropTypes.string,
     facebook: PropTypes.string,

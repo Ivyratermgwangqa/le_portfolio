@@ -1,0 +1,67 @@
+/* src/components/Carousel.css */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    /* Adjust width as needed */
+    margin: auto;
+    overflow: hidden;
+    /* Ensure that overflow is hidden for the carousel */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 1px solid #050505;
+    text-align: center;
+}
+
+.carousel-item h3,
+.carousel-item p {
+    margin: 0.5rem 0;
+}
+
+.carousel-item a {
+    color: #1ca2c4;
+    text-decoration: none;
+}
+
+.carousel-item a:hover {
+    text-decoration: underline;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}

@@ -1,0 +1,206 @@
+/* Import Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* Custom Global Styles */
+/* Customizing headings */
+@layer base {
+    body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-primary);
+    color: var(--text-white);
+    line-height: var(--leading-loose);
+    }
+    .h1 {
+        font-size: 48px;
+        font-size: 80px;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+    .h2 {
+        font-size: 36px;
+        font-size: 48px;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+    .h3 {
+        font-size: 20px;
+        font-size: 24px;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+}
+h6 {
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ffffff; /* Default link color */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #4f46e5; /* Example hover color */
+    text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #000000; /* Darker gray for containers */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgb(0, 255, 247); /* Add subtle shadow for depth */
+}
+/* Rounded Box Styling */
+.rounded-box {
+    background-color: #000000; /* Dark gray background for sections */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 2rem; /* Add spacing inside the box */
+    margin-bottom: 2rem; /* Space between sections */
+    box-shadow: 0 4px 6px rgb(0, 247, 255); /* Add depth with shadow */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Adding custom text colors */
+.text-accent {
+    color: #4f46e5; /* Accent color */
+}
+
+/* Utility classes for spacing */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+/* Form styles */
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.75rem; /* Extra rounded corners for inputs */
+    border: 1px solid #00fbff; /* Subtle border for inputs */
+    background-color: #000000; /* Match form fields with the container */
+    color: #fff; /* White text */
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00f7ff; /* Accent color */
+    outline: none;
+}
+
+/* Button styles */
+button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* Extra rounded corners */
+    border: none;
+    background-color: hsla(183, 100%, 50%, 0); /* Accent color */
+    color: #fefefe;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff; /* Darker shade of the accent color */
+}
+
+/* Card component */
+.card {
+    background-color: #1a1a1a; /* Match card to container */
+    color: #ffffff;
+    border-radius: 1rem; /* Rounded corners for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+}
+
+/* Header and Footer adjustments */
+header,
+footer {
+    background-color: #1a1a1a; /* Match header/footer with container */
+    color: #ffffff;
+    padding: 1rem 0;
+    border-radius: 1rem; /* Add rounding for header and footer */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Transition effects */
+.transition {
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #000000;
+    /* Slightly darker shade of primaryColor */
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
+}
+
+/* Add to your CSS file or style object */
+input,
+textarea {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2d3031;
+    /* Highlight color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow */
+}
+
+/* Add to your CSS file or style object */
+.socialIcon {
+    transition: transform 0.3s;
+}
+
+.socialIcon:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the icon */
+}
+
+/* Add to your CSS file or style object */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

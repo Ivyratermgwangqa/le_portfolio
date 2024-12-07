@@ -1,43 +1,28 @@
-"use client";
+// src/app/page.tsx
+"use client"; // Explicitly mark this as a Client Component
 
-import TypingAnimation from './components/ui/TypingAnimation';
+import React, { useState } from "react";
+import Button from "../components/Button"; // Import the Button component
 
-const HomeSection = () => (
-  <section id="home" className="text-center py-20">
-    <h2 className="text-4xl font-bold mb-6">Welcome to Leratos Portfolio</h2>
-    <p className="text-xl mb-4">
-      <TypingAnimation text="I'm a software engineer, AI enthusiast, and tech lover." />
-    </p>
-    <p className="text-lg text-gray-600">Explore my projects and learn more about my journey.</p>
-  </section>
-);
+const HomePage: React.FC = () => {
+  const [count, setCount] = useState(0); // State to track counter
 
-const ProjectsSection = () => (
-  <section id="projects" className="py-20 bg-gray-50">
-    <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
-    <p className="text-lg text-gray-700 text-center mb-6">
-      Here are some of the projects Ive been working on.
-    </p>
-    {/* Add your project details here */}
-  </section>
-);
+  // Event handler for button click
+  const handleClick = () => {
+    setCount(count + 1); // Increment the count
+  };
 
-const AboutSection = () => (
-  <section id="about" className="py-20">
-    <h2 className="text-3xl font-bold text-center mb-6">About Me</h2>
-    <p className="text-lg text-gray-700 text-center mb-6">
-      Learn more about my background, skills, and experiences.
-    </p>
-    {/* Add your about me details here */}
-  </section>
-);
-
-export default function HomeAndProjects() {
   return (
-    <>
-      <HomeSection />
-      <ProjectsSection />
-      <AboutSection />
-    </>
+    <div style={{ padding: "2rem", textAlign: "center" }}>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Click the button to increment the counter:</p>
+
+      <h2>Counter: {count}</h2>
+
+      {/* Passing the event handler to Button */}
+      <Button text="Click Me" onClick={handleClick} variant="primary" size="medium" />
+    </div>
   );
-}
+};
+
+export default HomePage;
