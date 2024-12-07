@@ -1,5 +1,6 @@
 // src/components/Tabs.tsx
 import React, { useState } from "react";
+import TypingAnimation from "../typinganimation/TypingAnimation";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -10,12 +11,7 @@ const Tabs: React.FC = () => {
         return (
           <div>
             <h1>About Me</h1>
-            <p>
-              Hello! I&apos;m Lerato Mgwangqa, a driven and skilled final-year BSc student specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I&apos;m proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning.
-            </p>
-            <p>
-              I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I&apos;m recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I&apos;m prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments.
-            </p>
+            <TypingAnimation text="Hello! I'm Lerato Mgwangqa, a driven and skilled final-year BSc student specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I'm proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning. I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I'm recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I'm prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments." />
           </div>
         );
       case "work":
@@ -23,7 +19,7 @@ const Tabs: React.FC = () => {
           <div>
             <h2>Work Experience</h2>
             <h3>Sol Plaatje University</h3>
-            <p>Peer Mentor (January 2024 - November 2024)</p>
+            <TypingAnimation text="Peer Mentor (January 2024 - November 2024)" />
             <ul style={{ textAlign: "left", display: "inline-block" }}>
               <li>Provided academic and personal support to over 20 students, enhancing their academic performance and study skills.</li>
               <li>Organized study groups and workshops, contributing to a collaborative learning environment.</li>
@@ -36,7 +32,7 @@ const Tabs: React.FC = () => {
           <div>
             <h2>Education</h2>
             <h3>Sol Plaatje University, Kimberley</h3>
-            <p>BSc in Mathematical and Computer Sciences (January 2022 - November 2024)</p>
+            <TypingAnimation text="BSc in Mathematical and Computer Sciences (January 2022 - November 2024)" />
             <p>Completed coursework encompassing a broad spectrum of topics in computer science, mathematics, and statistics, including:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
               <li>Computer Organization, Computer Architecture, Programming, Data Structures and Algorithms</li>
@@ -46,7 +42,7 @@ const Tabs: React.FC = () => {
               <li>Proficiency in interdisciplinary topics such as Numerical Methods, Mathematical Modelling, and Markov Processes</li>
             </ul>
             <h3>African Leadership Experience (ALX)</h3>
-            <p>Software Engineering (January 2023 - August 2024)</p>
+            <TypingAnimation text="Software Engineering (January 2023 - August 2024)" />
             <p>Completed a comprehensive program focused on modern backend development techniques and tools. Key areas of expertise include:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
               <li>Languages & Frameworks: Modern JavaScript (ES6+), TypeScript, Node.js, Express.js, Python, C</li>

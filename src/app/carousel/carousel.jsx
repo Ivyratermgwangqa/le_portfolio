@@ -1,5 +1,6 @@
 // src/components/Carousel.js
 import React, { useState } from "react";
+import Image from 'next/image';
 import "./carousel.css";
 
 const Carousel = ({ projects }) => {
@@ -26,7 +27,7 @@ const Carousel = ({ projects }) => {
                     {projects.map((project, index) => (
                         <div key={index} className="carousel-item">
                             <h3>{project.title}</h3>
-                            <p style={{ margin: "0.5rem 0" }}>{project.date}</p>
+                            <Image src={project.image} alt={project.title} layout="responsive" width={500} height={300} />
                             <p style={{ margin: "0.5rem 0" }}>{project.description}</p>
                             <p style={{ margin: "0.5rem 0", fontStyle: "italic" }}>{project.tools}</p>
                             <a href={project.url} target="_blank" rel="noopener noreferrer">

@@ -6,10 +6,12 @@ import Carousel from "/home/lerato/le_portfolio/src/app/carousel/carousel"
 
 const projects = [
   {
-    title: "Residence-Based Management System",
-    date: "August 2023 - November 2023",
-    description: "Developed a system to streamline and manage student residence data, improving administrative efficiency.",
+    title: "Learnaz-Hub",
+    date: "May 2024 - July 2024",
+    image: "https://via.placeholder.com/800x400",
+    description: "Learnaz Hub is an E-learning platform designed for users of all ages to learn new skills and gain knowledge in various fields.",
     tools: "Tools Used: MySQL, HTML5, CSS3, JavaScript",
+    url: "https://learnaz-hub.vercel.app/",
   },
   {
     title: "Residence-Based Management System",

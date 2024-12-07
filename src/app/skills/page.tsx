@@ -51,7 +51,7 @@ const Skills: React.FC = () => {
   return (
     <div className="container mx-auto p-6">
       <section style={{ padding: "2rem", textAlign: "center" }}>
-        <h1>Skills</h1>
+      <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>My Skills</h1>
         <div className="flex justify-center mb-4">
           <button
             className={`relative inline-block font-medium group py-1.5 px-2.5 ${activeHorizontalTab === "Technical" ? "border-t-4" : "text-indigo-600 border-indigo-600 py-4"}`}
