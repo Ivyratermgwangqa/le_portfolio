@@ -15,15 +15,15 @@ const Skills: React.FC = () => {
   ];
 
   const softSkillTabs = [
-    { label: "Technical Writing", content: "Technical Writing, Collaboration, Time Management, Public Speaking, Analytical Thinking, Resilience, Attention to Detail, Adaptability" },
-    { label: "Collaboration", content: "Collaboration skills content" },
-    { label: "Time Management", content: "Time Management skills content" },
-    { label: "Public Speaking", content: "Public Speaking skills content" },
-    { label: "Analytical Thinking", content: "Analytical Thinking skills content" },
-    { label: "Resilience", content: "Resilience skills content" },
-    { label: "Attention to Detail", content: "Attention to Detail skills content" },
-    { label: "Adaptability", content: "Adaptability skills content" },
-    { label: "Microsoft Office Suite", content: "Excel, PowerPoint, Word, and other applications" },
+    { label: "Communication Skills", content: "I believe that great communication is the foundation of success. Whether I’m explaining a complex algorithm to a teammate, presenting a project to my professors, or documenting my code, I focus on being clear and effective. I also value active listening, as it helps me learn from others and improve my work based on feedback." },
+    { label: "Problem-Solving and Critical Thinking", content: "For me, problem-solving is like a puzzle waiting to be solved. I enjoy breaking down complex challenges into smaller, manageable parts and using logical reasoning to find solutions. But I don’t stop there—I try to approach problems creatively, looking for unique and innovative ways to address them." },
+    { label: "Time Management and Organization", content: "Balancing coursework, projects, and other responsibilities has taught me the importance of managing my time wisely. I make it a priority to plan ahead, meet deadlines, and stay organized, ensuring that I deliver quality work without unnecessary stress." },
+    { label: "Teamwork and Collaboration", content: "I thrive in collaborative environments where ideas can flow freely. Working with others has helped me understand the importance of adaptability and conflict resolution. I enjoy being part of a team and contributing to a shared goal, whether it’s a group project or a coding competition." },
+    { label: "Leadership and Initiative", content: "I’ve taken on leadership roles during my studies, whether as a peer mentor or a project lead. I enjoy guiding and motivating others, but I also take the initiative to learn and grow personally. I believe leadership is about inspiring others and being willing to step up when it matters most." },
+    { label: "Technical Writing", content: "Clear and concise technical writing is something I take pride in. Whether I’m documenting code, writing a project report, or creating a presentation, I strive to make my work easy to understand and follow. It’s all about making complex ideas accessible to everyone." },
+    { label: "Presentation and Public Speaking", content: "I’ve grown to enjoy presenting my work and ideas. Whether it’s a classroom presentation or a project defense, I focus on explaining my thoughts clearly and confidently. I aim to keep my audience engaged and make even the most technical topics relatable." },
+    { label: "Emotional Intelligence (EQ)", content: "Understanding and working well with others is important to me. I try to be empathetic, understanding my teammates’ perspectives, and I work on staying calm and focused, even under pressure. I believe positivity and motivation can inspire everyone around me." },
+    { label: "Microsoft Office Suite", content: "I am highly skilled in using Microsoft Office Suite, including Word, Excel, PowerPoint, and Access. I use Microsoft Word for creating well-structured documents, reports, and presentations with advanced formatting and professional layouts. With Excel, I am adept at data analysis, creating complex spreadsheets, using formulas and functions, and visualizing data through charts and pivot tables. My experience with PowerPoint includes designing engaging presentations that effectively convey information" },
   ];
 
   const renderVerticalTabs = (tabs: { label: string; content: string }[]) => (

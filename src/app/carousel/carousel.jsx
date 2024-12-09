@@ -27,7 +27,9 @@ const Carousel = ({ projects }) => {
                     {projects.map((project, index) => (
                         <div key={index} className="carousel-item">
                             <h3>{project.title}</h3>
-                            <Image src={project.image} alt={project.title} layout="responsive" width={500} height={300} />
+                            <div className="image-container">
+                                <Image src={project.image} alt={project.title} fill style={{ objectFit: 'cover' }} />
+                            </div>
                             <p style={{ margin: "0.5rem 0" }}>{project.description}</p>
                             <p style={{ margin: "0.5rem 0", fontStyle: "italic" }}>{project.tools}</p>
                             <a href={project.url} target="_blank" rel="noopener noreferrer">
