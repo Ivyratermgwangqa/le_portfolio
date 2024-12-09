@@ -1,17 +1,83 @@
 // src/app/skills/page.tsx
 import React, { useState } from "react";
+import { DiJavascript1, DiPython, DiHtml5, DiCss3, DiReact, DiNodejsSmall, DiGit, DiGithub, DiLinux, DiMongodb, DiNpm, DiMysql, DiTerminal, DiRedis, DiUbuntu, DiVim } from 'react-icons/di';
+import { SiFlask, SiStreamlit, SiScikitlearn, SiCplusplus, SiC, SiJupyter, SiR, SiReact, SiVitest } from 'react-icons/si';
+import { FaNetworkWired, FaGlobe, FaProjectDiagram } from 'react-icons/fa';
+import { MdWifi } from 'react-icons/md';
+import { AiOutlineGlobal, AiFillLock } from 'react-icons/ai';
+import { FiServer } from 'react-icons/fi';
+import { CgTerminal } from 'react-icons/cg';
+import { BsCloudUpload, BsCloudDownload } from 'react-icons/bs';
 
 const Skills: React.FC = () => {
   const [activeHorizontalTab, setActiveHorizontalTab] = useState("Technical");
   const [activeVerticalTab, setActiveVerticalTab] = useState("Programming Languages");
 
   const technicalTabs = [
-    { label: "Programming Languages", content: "Python, C/C++, R, Shell Scripting" },
-    { label: "Web Development", content: "HTML5, CSS3, JavaScript (Express.js, Node.js)" },
-    { label: "Databases", content: "MySQL, MongoDB, Redis" },
-    { label: "Frameworks & Tools", content: "Flask, Streamlit, Scikit-Learn, NLTK, Jupyter Notebook, Joblib, React.js, Unit Testing" },
-    { label: "Version Control & Operating Systems", content: "Git, GitHub, Linux (Ubuntu WSL), vi/vim" },
-    { label: "Networking", content: "Ethernet, Wi-Fi, VLAN, NAT, TCP/IP, DNS, DHCP, HTTP/HTTPS, FTP/SFTP, SSH" },
+    { label: "Programming Languages", content: (
+      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
+        <SiCplusplus title="C++" />
+        <SiC title="C" />
+        <DiPython title="Python" />
+        <DiJavascript1 title="JavaScript" />
+        <DiHtml5 title="HTML5" />
+        <DiCss3 title="CSS3" />
+        <DiReact title="React" />
+        <DiNodejsSmall title="Node.js" />
+      </div>
+    ) },
+    { label: "Web Development", content: (
+      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
+        <DiPython title="Python" />
+        <DiJavascript1 title="JavaScript" />
+        <DiHtml5 title="HTML5" />
+        <DiCss3 title="CSS3" />
+        <DiReact title="React" />
+        <DiNodejsSmall title="Node.js" />
+      </div>
+    ) },
+    { label: "Databases", content: (
+      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
+        <DiMongodb title="MongoDB" />
+        <DiMysql title="MySQL" />
+        <DiRedis title="Redis" />
+      </div>
+    ) },
+    { label: "Frameworks & Tools", content: (
+      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
+        <SiFlask title="Flask" />
+        <SiStreamlit title="Streamlit" />
+        <SiScikitlearn title="Scikit-learn" />
+        <SiJupyter title="Jupyter" />
+        <SiR title="R" />
+        <SiReact title="React" />
+        <SiVitest title="Vite" />
+        <DiNpm title="npm" />
+      </div>
+    ) },
+    { label: "Version Control & Operating Systems", content: (
+      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
+        <DiGit title="Git" />
+        <DiGithub title="GitHub" />
+        <DiLinux title="Linux" />
+        <DiUbuntu title="Ubuntu" />
+        <DiVim title="Vim" />
+        <DiTerminal title="Terminal" />
+      </div>
+    ) },
+    { label: "Networking", content: (
+      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
+        <FaNetworkWired size={40} title="Ethernet" />
+      <MdWifi size={40} title="Wi-Fi" />
+      <FaProjectDiagram size={40} title="VLAN" />
+      <AiOutlineGlobal size={40} title="TCP/IP" />
+      <FaGlobe size={40} title="DNS" />
+      <FiServer size={40} title="DHCP" />
+      <AiFillLock size={40} title="HTTPS" />
+      <BsCloudUpload size={40} title="FTP" />
+      <CgTerminal size={40} title="SSH" />
+      </div>
+    ) },
   ];
 
   const softSkillTabs = [
@@ -26,7 +92,7 @@ const Skills: React.FC = () => {
     { label: "Microsoft Office Suite", content: "I am highly skilled in using Microsoft Office Suite, including Word, Excel, PowerPoint, and Access. I use Microsoft Word for creating well-structured documents, reports, and presentations with advanced formatting and professional layouts. With Excel, I am adept at data analysis, creating complex spreadsheets, using formulas and functions, and visualizing data through charts and pivot tables. My experience with PowerPoint includes designing engaging presentations that effectively convey information" },
   ];
 
-  const renderVerticalTabs = (tabs: { label: string; content: string }[]) => (
+  const renderVerticalTabs = (tabs: { label: string; content: React.ReactNode }[]) => (
     <div className="flex">
       <div className="w-1/4 border-r border-indigo-600">
         <ul className="list-none p-0">
