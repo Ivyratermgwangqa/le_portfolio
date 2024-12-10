@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
             className="uppercase flex items-center gap-2"
             onClick={() => console.log("Button clicked")}
             />
-            <FiDownload className="text-xl" />
+            {/* <FiDownload className="text-xl" /> */}
             <div className="mb-8 xl:mb-8"></div>
             </div>
           </div>

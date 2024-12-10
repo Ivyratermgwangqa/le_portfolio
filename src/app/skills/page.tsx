@@ -1,6 +1,6 @@
 // src/app/skills/page.tsx
 import React, { useState } from "react";
-import { DiJavascript1, DiPython, DiHtml5, DiCss3, DiReact, DiNodejsSmall, DiGit, DiGithub, DiLinux, DiMongodb, DiNpm, DiMysql, DiTerminal, DiRedis, DiUbuntu, DiVim } from 'react-icons/di';
+import { DiJavascript1, DiPython, DiHtml5, DiCss3, DiReact, DiNodejsSmall, DiGit, DiGithub, DiLinux, DiMongodb, DiNpm, DiMysql, DiTerminal, DiRedis, DiUbuntu, DiVim, DiCode } from 'react-icons/di';
 import { SiFlask, SiStreamlit, SiScikitlearn, SiCplusplus, SiC, SiJupyter, SiR, SiReact, SiVitest } from 'react-icons/si';
 import { FaNetworkWired, FaGlobe, FaProjectDiagram } from 'react-icons/fa';
 import { MdWifi } from 'react-icons/md';
@@ -13,71 +13,86 @@ const Skills: React.FC = () => {
   const [activeHorizontalTab, setActiveHorizontalTab] = useState("Technical");
   const [activeVerticalTab, setActiveVerticalTab] = useState("Programming Languages");
 
+  const renderIcons = (icons: { Icon: any; label: string }[]) => (
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', fontSize: '1rem' }}>
+      {icons.map(({ Icon, label }) => (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '2rem' }} key={label}>
+          <Icon />
+          <span>{label}</span>
+        </div>
+      ))}
+    </div>
+  );
+
   const technicalTabs = [
-    { label: "Programming Languages", content: (
-      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
-        <SiCplusplus title="C++" />
-        <SiC title="C" />
-        <DiPython title="Python" />
-        <DiJavascript1 title="JavaScript" />
-        <DiHtml5 title="HTML5" />
-        <DiCss3 title="CSS3" />
-        <DiReact title="React" />
-        <DiNodejsSmall title="Node.js" />
-      </div>
-    ) },
-    { label: "Web Development", content: (
-      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
-        <DiPython title="Python" />
-        <DiJavascript1 title="JavaScript" />
-        <DiHtml5 title="HTML5" />
-        <DiCss3 title="CSS3" />
-        <DiReact title="React" />
-        <DiNodejsSmall title="Node.js" />
-      </div>
-    ) },
-    { label: "Databases", content: (
-      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
-        <DiMongodb title="MongoDB" />
-        <DiMysql title="MySQL" />
-        <DiRedis title="Redis" />
-      </div>
-    ) },
-    { label: "Frameworks & Tools", content: (
-      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
-        <SiFlask title="Flask" />
-        <SiStreamlit title="Streamlit" />
-        <SiScikitlearn title="Scikit-learn" />
-        <SiJupyter title="Jupyter" />
-        <SiR title="R" />
-        <SiReact title="React" />
-        <SiVitest title="Vite" />
-        <DiNpm title="npm" />
-      </div>
-    ) },
-    { label: "Version Control & Operating Systems", content: (
-      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
-        <DiGit title="Git" />
-        <DiGithub title="GitHub" />
-        <DiLinux title="Linux" />
-        <DiUbuntu title="Ubuntu" />
-        <DiVim title="Vim" />
-        <DiTerminal title="Terminal" />
-      </div>
-    ) },
-    { label: "Networking", content: (
-      <div style={{ display: 'flex', gap: '1rem', fontSize: '2rem' }}>
-        <FaNetworkWired size={40} title="Ethernet" />
-      <MdWifi size={40} title="Wi-Fi" />
-      <FaProjectDiagram size={40} title="VLAN" />
-      <AiOutlineGlobal size={40} title="TCP/IP" />
-      <FaGlobe size={40} title="DNS" />
-      <FiServer size={40} title="DHCP" />
-      <AiFillLock size={40} title="HTTPS" />
-      <BsCloudUpload size={40} title="FTP" />
-      <CgTerminal size={40} title="SSH" />
-      </div>
-    ) },
+    { label: "Programming Languages", 
+      brief: "These are the programming languages I am proficient in, ranging from general-purpose to web development-focused languages.",
+      content: renderIcons([
+        { Icon: SiCplusplus, label: "C++" },
+        { Icon: SiC, label: "C" },
+        { Icon: DiPython, label: "Python" },
+        { Icon: DiJavascript1, label: "JavaScript" },
+        { Icon: SiR, label: "R" },
+        { Icon: DiCode, label: "Shell Scripting" },
+      ])
+    },
+    { label: "Web Development", 
+      brief: "These are the web development technologies I am proficient in, including front-end and back-end technologies.",
+      content: renderIcons([
+        { Icon: DiPython, label: "Python" },
+        { Icon: DiJavascript1, label: "JavaScript" },
+        { Icon: DiHtml5, label: "HTML5" },
+        { Icon: DiCss3, label: "CSS3" },
+        { Icon: DiReact, label: "React" },
+        { Icon: DiNodejsSmall, label: "Node.js" },
+      ])
+    },
+    { label: "Databases", 
+      brief: "These are the database technologies I am proficient in, including both SQL and NoSQL databases.",
+      content: renderIcons([
+        { Icon: DiMongodb, label: "MongoDB" },
+        { Icon: DiMysql, label: "MySQL" },
+        { Icon: DiRedis, label: "Redis" },
+      ])
+    },
+    { label: "Frameworks & Tools", 
+      brief: "These are the frameworks and tools I use for development, including libraries for data analysis and machine learning.",
+      content: renderIcons([
+        { Icon: SiFlask, label: "Flask" },
+        { Icon: SiStreamlit, label: "Streamlit" },
+        { Icon: SiScikitlearn, label: "Scikit-learn" },
+        { Icon: SiJupyter, label: "Jupyter" },
+        { Icon: SiR, label: "R" },
+        { Icon: SiReact, label: "React" },
+        { Icon: SiVitest, label: "Vite" },
+        { Icon: DiNpm, label: "npm" },
+      ])
+    },
+    { label: "Version Control & Operating Systems", 
+      brief: "These are the version control systems and operating systems I am proficient in.",
+      content: renderIcons([
+        { Icon: DiGit, label: "Git" },
+        { Icon: DiGithub, label: "GitHub" },
+        { Icon: DiLinux, label: "Linux" },
+        { Icon: DiUbuntu, label: "Ubuntu" },
+        { Icon: DiVim, label: "Vim" },
+        { Icon: DiTerminal, label: "Terminal" },
+      ])
+    },
+    { label: "Networking", 
+      brief: "These are the networking technologies I am proficient in, including protocols and tools for network management.",
+      content: renderIcons([
+        { Icon: FaNetworkWired, label: "Ethernet" },
+        { Icon: MdWifi, label: "Wi-Fi" },
+        { Icon: FaProjectDiagram, label: "VLAN" },
+        { Icon: AiOutlineGlobal, label: "TCP/IP" },
+        { Icon: FaGlobe, label: "DNS" },
+        { Icon: FiServer, label: "DHCP" },
+        { Icon: AiFillLock, label: "HTTPS" },
+        { Icon: BsCloudUpload, label: "FTP" },
+        { Icon: CgTerminal, label: "SSH" },
+      ])
+    },
   ];
 
   const softSkillTabs = [
@@ -92,7 +107,7 @@ const Skills: React.FC = () => {
     { label: "Microsoft Office Suite", content: "I am highly skilled in using Microsoft Office Suite, including Word, Excel, PowerPoint, and Access. I use Microsoft Word for creating well-structured documents, reports, and presentations with advanced formatting and professional layouts. With Excel, I am adept at data analysis, creating complex spreadsheets, using formulas and functions, and visualizing data through charts and pivot tables. My experience with PowerPoint includes designing engaging presentations that effectively convey information" },
   ];
 
-  const renderVerticalTabs = (tabs: { label: string; content: React.ReactNode }[]) => (
+  const renderVerticalTabs = (tabs: { label: string; brief?: string; content: React.ReactNode }[]) => (
     <div className="flex">
       <div className="w-1/4 border-r border-indigo-600">
         <ul className="list-none p-0">
@@ -109,6 +124,11 @@ const Skills: React.FC = () => {
         </ul>
       </div>
       <div className="w-3/4 p-4">
+        {tabs.find((tab) => tab.label === activeVerticalTab)?.brief && (
+          <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>
+            {tabs.find((tab) => tab.label === activeVerticalTab)?.brief}
+          </p>
+        )}
         {tabs.find((tab) => tab.label === activeVerticalTab)?.content}
       </div>
     </div>
@@ -134,7 +154,7 @@ const Skills: React.FC = () => {
             className={`relative inline-block font-medium group py-1.5 px-2.5 ml-2 ${activeHorizontalTab === "Soft" ? "border-t-4" : "text-indigo-600 border-indigo-600 py-4"}`}
             onClick={() => {
               setActiveHorizontalTab("Soft");
-              setActiveVerticalTab("Technical Writing"); // Reset vertical tab to default
+              setActiveVerticalTab("Communication Skills"); // Reset vertical tab to default
             }}
           >
             <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-indigo-600 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
