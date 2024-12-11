@@ -53,16 +53,17 @@ const HomePage: React.FC = () => {
             A driven and skilled final-year BSc student specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. Im proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning.
             </p>
 
-          <div className="flex flex-col items-center gap-8">
-            <Button
-            text="Download CV"
-            variant="outline"
-            size="md"
-            className="uppercase flex items-center gap-2"
-            onClick={() => console.log("Button clicked")}
-            />
-            {/* <FiDownload className="text-xl" /> */}
-            <div className="mb-8 xl:mb-8"></div>
+            <div className="flex flex-col items-center gap-8">
+              <a href="/cv.pdf" download>
+              <Button
+                text={<><FiDownload className="text-xl" /> Download CV</>}
+                variant="outline"
+                size="md"
+                className="uppercase flex items-center gap-2"
+                onClick={() => console.log("Button clicked")}
+              />
+              </a>
+              <div className="mb-8 xl:mb-8"></div>
             </div>
           </div>
         </div>

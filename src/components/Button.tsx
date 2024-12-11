@@ -3,13 +3,21 @@
 
 import React from "react";
 
+
 interface ButtonProps {
-  text: string;
+
+  text: React.ReactNode;
+
   variant: string;
+
   size: string;
+
   className?: string;
+
   onClick?: () => void;
+
 }
+
 
 const Button: React.FC<ButtonProps> = ({ text, variant, size, className, onClick }) => {
   const baseStyle = "inline-flex items-center justify-center font-medium rounded";

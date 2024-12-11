@@ -14,11 +14,11 @@ const Skills: React.FC = () => {
   const [activeVerticalTab, setActiveVerticalTab] = useState("Programming Languages");
 
   const renderIcons = (icons: { Icon: any; label: string }[]) => (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', fontSize: '1rem' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '2rem', fontSize: '1rem' }}>
       {icons.map(({ Icon, label }) => (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '2rem' }} key={label}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '2rem', padding: '1rem', border: '1px solid #00e1ff', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} key={label}>
           <Icon />
-          <span>{label}</span>
+          <span style={{ marginTop: '0.5rem', fontSize: '1rem' }}>{label}</span>
         </div>
       ))}
     </div>
