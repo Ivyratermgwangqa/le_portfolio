@@ -2,7 +2,7 @@
 "use client"; // Explicitly mark this as a Client Component
 
 import React from "react";
-import Carousel from "/home/lerato/le_portfolio/src/app/carousel/carousel"
+import Carousel from "../../components/carousel/carousel"
 import { url } from "inspector";
 
 const projects = [
