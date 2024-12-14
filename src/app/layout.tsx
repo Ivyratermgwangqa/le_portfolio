@@ -10,6 +10,7 @@ import ProjectsPage from "./projects/page"; // Import the ProjectsPage component
 import AboutPage from "./about/page"; // Import the AboutPage component
 import Contact from "../components/Contact"; // Import the Contact component
 import Skills from "./skills/page";
+import Carousel from "../components/carousel/carousel";
 import { FiDownload } from "react-icons/fi";
 import Photo from "../components/photo"
 
@@ -41,7 +42,7 @@ const HomePage: React.FC = () => {
         {/* text */}
         <div className="text-center xl:text-center">
           <span className="text-xl">Software Engineer|Aspiring AI Engineer</span>
-          <h1 className="h1 mb-6">
+          <h1 className="mb-6">
           <span style={{ fontSize: '65px' }}>Welcome I&apos;m</span> <br />
             <span className="text-accent">Lerato Mgwangqa</span>
             </h1>

@@ -2,7 +2,6 @@
 
 import PropTypes from "prop-types";
 import Image from "next/image";
-import Contact from "./Contact";
 interface FooterProps {
     devDotTo?: string;
     email?: string;

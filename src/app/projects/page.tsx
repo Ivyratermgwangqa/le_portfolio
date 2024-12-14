@@ -53,16 +53,6 @@ export default function ProjectsPage() {
     <section style={{ padding: "2rem", textAlign: "center" }}>
       <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>My Projects</h1>
       <Carousel projects={projects} /> 
-      {/* <ul style={{ listStyleType: "none", padding: 0 }}>
-        {projects.map((project, index) => (
-          <li key={index} style={{ marginBottom: "2rem" }}>
-            <h2 style={{ fontSize: "1.5rem", margin: 0 }}>{project.title}</h2>
-            <p style={{ margin: "0.5rem 0" }}>{project.date}</p>
-            <p style={{ margin: "0.5rem 0" }}>{project.description}</p>
-            <p style={{ margin: "0.5rem 0", fontStyle: "italic" }}>{project.tools}</p>
-          </li>
-        ))}
-      </ul> */}
     </section>
   );
 }
