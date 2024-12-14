@@ -22,7 +22,7 @@ const Photo = (): JSX.Element => {
                 className="w-[200px] h-[200px] xl:w-[300px] xl:h-[300px] mix-blend-lighten"
             >
                 <Image
-                    src="/photo/myphoto8.png"
+                    src="/images/myphoto8.png"
                     priority
                     quality={100}
                     fill
