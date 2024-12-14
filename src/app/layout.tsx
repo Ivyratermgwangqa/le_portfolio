@@ -41,9 +41,9 @@ const HomePage: React.FC = () => {
         {/* text */}
         <div className="text-center xl:text-center">
           <span className="text-xl">Software Engineer|Aspiring AI Engineer</span>
-          <h1 className="mb-6">
+          <h1 className="h1 mb-6">
           <span style={{ fontSize: '65px' }}>Welcome I&apos;m</span> <br />
-            <span className="text-accent">Lerato Mgwangqa</span>
+            <span className="text-accent" >Lerato Mgwangqa</span>
             </h1>
             <div className=" order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
