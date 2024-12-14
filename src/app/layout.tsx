@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import Button from "../components/Button"; // Import the Button component
 import ProjectsPage from "./projects/page"; // Import the ProjectsPage component
 import AboutPage from "./about/page"; // Import the AboutPage component
-import Contact from "./contact/page"; // Import the Contact component
+import Contact from "../components/Contact"; // Import the Contact component
 import Skills from "./skills/page";
 import { FiDownload } from "react-icons/fi";
 import Photo from "/home/lerato/le_portfolio/src/app/photo/photo"

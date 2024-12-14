@@ -1,4 +1,6 @@
 // src/components/Tabs.tsx
+"use client";
+
 import React, { useState } from "react";
 import TypingAnimation from "../typinganimation/TypingAnimation";
 
