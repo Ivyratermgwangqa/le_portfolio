@@ -10,9 +10,8 @@ import ProjectsPage from "./projects/page"; // Import the ProjectsPage component
 import AboutPage from "./about/page"; // Import the AboutPage component
 import Contact from "../components/Contact"; // Import the Contact component
 import Skills from "./skills/page";
-import Carousel from "../components/carousel/carousel";
 import { FiDownload } from "react-icons/fi";
-import Photo from "../components/photo"
+import Photo from "../components/Photo"
 
 const siteProps = {
   name: "Lerato Mgwangqa",
