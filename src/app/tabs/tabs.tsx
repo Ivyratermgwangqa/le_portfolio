@@ -21,7 +21,7 @@ const Tabs: React.FC = () => {
           <div>
             <h2>Work Experience</h2>
             <h3>Sol Plaatje University</h3>
-            <TypingAnimation text="Peer Mentor (January 2024 - November 2024)" />
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Peer Mentor (January 2024 - November 2024)</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
               <li>Provided academic and personal support to over 20 students, enhancing their academic performance and study skills.</li>
               <li>Organized study groups and workshops, contributing to a collaborative learning environment.</li>
@@ -34,7 +34,7 @@ const Tabs: React.FC = () => {
           <div>
             <h2>Education</h2>
             <h3>Sol Plaatje University, Kimberley</h3>
-            <TypingAnimation text="BSc in Mathematical and Computer Sciences (January 2022 - November 2024)" />
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>BSc in Mathematical and Computer Sciences (January 2022 - November 2024)</p>
             <p>Completed coursework encompassing a broad spectrum of topics in computer science, mathematics, and statistics, including:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
               <li>📚 Computer Organization, Computer Architecture, Programming, Data Structures and Algorithms</li>

@@ -12,6 +12,7 @@ import Contact from "../components/Contact"; // Import the Contact component
 import Skills from "./skills/page";
 import { FiDownload } from "react-icons/fi";
 import Photo from "../components/Photo"
+import TypingAnimation from "./typinganimation/TypingAnimation";
 
 const siteProps = {
   name: "Lerato Mgwangqa",
@@ -50,7 +51,7 @@ const HomePage: React.FC = () => {
             </div>
           <div className="text-center xl:text-center">
             <p className="max-w-[700px] mb-15 text-white/80">
-            A driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I&apos;m proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning.
+            < TypingAnimation text= "A driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I&apos;m proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning." />
             </p>
 
             <div className="flex flex-col items-center gap-8">
