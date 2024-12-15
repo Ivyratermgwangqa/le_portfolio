@@ -2,7 +2,6 @@
 "use client";
 
 import React, { useState } from "react";
-import TypingAnimation from "../typinganimation/TypingAnimation";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -13,7 +12,9 @@ const Tabs: React.FC = () => {
         return (
           <div>
             <h1>About Me</h1>
-            <TypingAnimation text="Hello! I'm Lerato Mgwangqa, a driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I'm proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning. I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I'm recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I'm prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments." />
+            <p style={{ fontStyle: 'normal', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
+              Hello Again! I&apos;m Lerato Mgwangqa, a driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I&apos;m proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning. I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I&apos;m recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I&apos;m prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments.
+            </p>
           </div>
         );
       case "work":
@@ -23,9 +24,16 @@ const Tabs: React.FC = () => {
             <h3>Sol Plaatje University</h3>
             <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Peer Mentor (January 2024 - November 2024)</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <li>Provided academic and personal support to over 20 students, enhancing their academic performance and study skills.</li>
-              <li>Organized study groups and workshops, contributing to a collaborative learning environment.</li>
-              <li>Collaborated with faculty to develop action plans for struggling students, supporting a retention increase within the program.</li>
+              <li>🎓 Provided individualized academic and personal support to over 20 students, significantly improving their study skills and boosting academic performance.</li>
+              <li>🤝 Designed and facilitated study groups and interactive workshops, fostering a collaborative and inclusive learning environment that encouraged peer-to-peer knowledge sharing.</li>
+              <li>📋 Partnered with faculty to create tailored action plans for at-risk students, contributing to a measurable increase in student retention and success within the program.</li>
+              <li>🌟 Developed mentorship frameworks and feedback systems to track and measure the progress of mentees, ensuring consistent improvement and personal growth.</li>
+              <li>🔑 Acted as a bridge between students and faculty, advocating for student needs and promoting a culture of open communication and mutual respect.</li>
+              <li>🗣️ Conducted motivational sessions and skill-building workshops on time management, effective study strategies, and career planning to empower students for long-term success.</li>
+              <li>💻 Leveraged technology to create virtual support groups and online resources, ensuring accessibility and continuous learning for students in hybrid or remote settings.</li>
+              <li>📚 Created structured learning modules and study materials tailored to diverse learning styles, making academic content more approachable and engaging.</li>
+              <li>🌍 Encouraged a global mindset by mentoring students from diverse backgrounds, emphasizing cultural sensitivity and inclusivity in learning experiences.</li>
+              <li>📈 Applied data-driven techniques to identify common academic challenges and proactively address them through customized solutions and resource allocation.</li>
             </ul>
           </div>
         );
@@ -44,7 +52,7 @@ const Tabs: React.FC = () => {
               <li>🔢 Proficiency in interdisciplinary topics such as Numerical Methods, Mathematical Modelling, and Markov Processes</li>
             </ul>
             <h3>African Leadership Experience (ALX)</h3>
-            <TypingAnimation text="Software Engineering (January 2023 - August 2024)" />
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Software Engineering (January 2023 - August 2024)</p>
             <p>Completed a comprehensive program focused on modern backend development techniques and tools. Key areas of expertise include:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
               <li>💻 Languages & Frameworks: Modern JavaScript (ES6+), TypeScript, Node.js, Express.js, Python, C</li>
