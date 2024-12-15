@@ -13,8 +13,14 @@ const Tabs: React.FC = () => {
         return (
           <div>
             <h1>About Me</h1>
-            <p style={{ fontStyle: 'normal', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
-              Hello Again! I&apos;m Lerato Mgwangqa, a driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I&apos;m proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning. I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I&apos;m recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I&apos;m prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments.
+            <p style={{ fontStyle: 'normal', fontWeight: 'bold', letterSpacing: '2px', fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
+              Hi, I’m Lerato Mgwangqa, a passionate BSc graduate specializing in Mathematical and Computer Sciences. My journey began with a curiosity about how things work—from the logic behind algorithms to the beauty of mathematical patterns. Over the years, this curiosity has transformed into a passion for designing software and analyzing data to uncover insights that drive decisions.
+              <br /><br />
+              With a solid academic foundation and hands-on experience, I specialize in crafting efficient backend systems, unraveling statistical complexities, and bringing ideas to life through code. Whether it’s implementing secure user authentication, optimizing databases, or modeling real-world phenomena using time series, I embrace every challenge as an opportunity to grow.
+              <br /><br />
+              What sets me apart? A love for learning, a solution-oriented mindset, and a unique blend of skills that combine programming, DevOps, and advanced statistics. I’m recognized for my ability to tackle complex problems with creativity, precision, and a constant drive to improve.
+              <br /><br />
+              When I’m not immersed in code or data, you’ll probably find me experimenting with new recipes, hiking the nearest trail, or playing strategy games. Let’s connect and create something extraordinary together!
             </p>
           </div>
         );
