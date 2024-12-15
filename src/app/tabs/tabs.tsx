@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
+import TypingAnimation from "../typinganimation/TypingAnimation";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -24,17 +25,17 @@ const Tabs: React.FC = () => {
             <h3>Sol Plaatje University</h3>
             <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Peer Mentor (January 2024 - November 2024)</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <li>🎓 Provided individualized academic and personal support to over 20 students, significantly improving their study skills and boosting academic performance.</li>
-              <li>🤝 Designed and facilitated study groups and interactive workshops, fostering a collaborative and inclusive learning environment that encouraged peer-to-peer knowledge sharing.</li>
-              <li>📋 Partnered with faculty to create tailored action plans for at-risk students, contributing to a measurable increase in student retention and success within the program.</li>
-              <li>🌟 Developed mentorship frameworks and feedback systems to track and measure the progress of mentees, ensuring consistent improvement and personal growth.</li>
-              <li>🔑 Acted as a bridge between students and faculty, advocating for student needs and promoting a culture of open communication and mutual respect.</li>
-              <li>🗣️ Conducted motivational sessions and skill-building workshops on time management, effective study strategies, and career planning to empower students for long-term success.</li>
-              <li>💻 Leveraged technology to create virtual support groups and online resources, ensuring accessibility and continuous learning for students in hybrid or remote settings.</li>
-              <li>📚 Created structured learning modules and study materials tailored to diverse learning styles, making academic content more approachable and engaging.</li>
-              <li>🌍 Encouraged a global mindset by mentoring students from diverse backgrounds, emphasizing cultural sensitivity and inclusivity in learning experiences.</li>
-              <li>📈 Applied data-driven techniques to identify common academic challenges and proactively address them through customized solutions and resource allocation.</li>
-            </ul>
+              <TypingAnimation text="🎓 Provided individualized academic and personal support to over 20 students, significantly improving their study skills and boosting academic performance." />
+              <TypingAnimation text="🤝 Designed and facilitated study groups and interactive workshops, fostering a collaborative and inclusive learning environment that encouraged peer-to-peer knowledge sharing." />
+              <TypingAnimation text="📋 Partnered with faculty to create tailored action plans for at-risk students, contributing to a measurable increase in student retention and success within the program." />
+              <TypingAnimation text="🌟 Developed mentorship frameworks and feedback systems to track and measure the progress of mentees, ensuring consistent improvement and personal growth." />
+              <TypingAnimation text="🔑 Acted as a bridge between students and faculty, advocating for student needs and promoting a culture of open communication and mutual respect." />
+              <TypingAnimation text="🗣️ Conducted motivational sessions and skill-building workshops on time management, effective study strategies, and career planning to empower students for long-term success." />
+              <TypingAnimation text="💻 Leveraged technology to create virtual support groups and online resources, ensuring accessibility and continuous learning for students in hybrid or remote settings." />
+              <TypingAnimation text="📚 Created structured learning modules and study materials tailored to diverse learning styles, making academic content more approachable and engaging." />
+              <TypingAnimation text="🌍 Encouraged a global mindset by mentoring students from diverse backgrounds, emphasizing cultural sensitivity and inclusivity in learning experiences." />
+              <TypingAnimation text="📈 Applied data-driven techniques to identify common academic challenges and proactively address them through customized solutions and resource allocation." />
+</ul>
           </div>
         );
       case "education":
