@@ -12,7 +12,7 @@ const TypingAnimation = ({ text }: { text: string }) => {
             const timeout = setTimeout(() => {
                 setDisplayText((prev) => prev + text.charAt(index));
                 setIndex((prevIndex) => prevIndex + 1);
-            }, 200);  // Adjust the speed of typing here (in milliseconds)
+            }, 50);  // Adjust the speed of typing here (in milliseconds)
 
             return () => clearTimeout(timeout);
         }
