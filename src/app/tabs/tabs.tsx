@@ -13,7 +13,7 @@ const Tabs: React.FC = () => {
         return (
           <div>
             <h1>About Me</h1>
-            <TypingAnimation text="Hello! I'm Lerato Mgwangqa, a driven and skilled final-year BSc student specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I'm proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning. I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I'm recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I'm prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments." />
+            <TypingAnimation text="Hello! I'm Lerato Mgwangqa, a driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I'm proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning. I have a proven track record as a peer mentor, where I enhanced student performance through organized study support and personal mentorship. I'm recognized for my problem-solving abilities, attention to detail, and dedication to continuous learning. I'm prepared to contribute effectively in roles that require technical acumen, analytical thinking, and project execution in software engineering and data-driven environments." />
           </div>
         );
       case "work":
@@ -37,19 +37,19 @@ const Tabs: React.FC = () => {
             <TypingAnimation text="BSc in Mathematical and Computer Sciences (January 2022 - November 2024)" />
             <p>Completed coursework encompassing a broad spectrum of topics in computer science, mathematics, and statistics, including:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <li>Computer Organization, Computer Architecture, Programming, Data Structures and Algorithms</li>
-              <li>Algorithm Analysis and Program Design, Operating Systems, Artificial Intelligence, Database Systems</li>
-              <li>Mathematical foundations in Algebra, Linear Algebra, Calculus, Advanced Calculus, Probability Theory, and Mathematical Analysis</li>
-              <li>Statistical expertise in Statistical Inference, Regression Analysis, Non-Parametric Statistics, Time Series Analysis, and Generalized Linear Models</li>
-              <li>Proficiency in interdisciplinary topics such as Numerical Methods, Mathematical Modelling, and Markov Processes</li>
+              <li>📚 Computer Organization, Computer Architecture, Programming, Data Structures and Algorithms</li>
+              <li>📈 Algorithm Analysis and Program Design, Operating Systems, Artificial Intelligence, Database Systems</li>
+              <li>📐 Mathematical foundations in Algebra, Linear Algebra, Calculus, Advanced Calculus, Probability Theory, and Mathematical Analysis</li>
+              <li>📊 Statistical expertise in Statistical Inference, Regression Analysis, Non-Parametric Statistics, Time Series Analysis, and Generalized Linear Models</li>
+              <li>🔢 Proficiency in interdisciplinary topics such as Numerical Methods, Mathematical Modelling, and Markov Processes</li>
             </ul>
             <h3>African Leadership Experience (ALX)</h3>
             <TypingAnimation text="Software Engineering (January 2023 - August 2024)" />
             <p>Completed a comprehensive program focused on modern backend development techniques and tools. Key areas of expertise include:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <li>Languages & Frameworks: Modern JavaScript (ES6+), TypeScript, Node.js, Express.js, Python, C</li>
-              <li>Backend Development: Advanced MySQL, NoSQL, Redis, Queuing systems, caching, pagination, user authentication, and data security</li>
-              <li>DevOps & Systems Engineering: Linux basics, web servers (Nginx), application servers, load balancing, monitoring, CI/CD, and web stack debugging</li>
+              <li>💻 Languages & Frameworks: Modern JavaScript (ES6+), TypeScript, Node.js, Express.js, Python, C</li>
+              <li>🔧 Backend Development: Advanced MySQL, NoSQL, Redis, Queuing systems, caching, pagination, user authentication, and data security</li>
+              <li>⚙️ DevOps & Systems Engineering: Linux basics, web servers (Nginx), application servers, load balancing, monitoring, CI/CD, and web stack debugging</li>
             </ul>
           </div>
         );

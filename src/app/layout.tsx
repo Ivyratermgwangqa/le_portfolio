@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
             </div>
           <div className="text-center xl:text-center">
             <p className="max-w-[700px] mb-15 text-white/80">
-            A driven and skilled final-year BSc student specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. Im proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning.
+            A driven and skilled BSc graduate specializing in Mathematical and Computer Sciences. I have hands-on experience in software development, data analysis, and networking. I&apos;m proficient in Python, C/C++, and R, with a strong foundation in full-stack development, backend technologies, and machine learning.
             </p>
 
             <div className="flex flex-col items-center gap-8">
