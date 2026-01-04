@@ -28,43 +28,79 @@ const Tabs: React.FC = () => {
         return (
           <div>
             <h2>Work Experience</h2>
-            <h3>Sol Plaatje University</h3>
-            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Peer Mentor (January 2024 - November 2024)</p>
+            <h3>Sasol</h3>
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Data Engineering Trainee (2025 – Present)</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <TypingAnimation text="🎓 Provided individualized academic and personal support to over 20 students, significantly improving their study skills and boosting academic performance." />
-              <TypingAnimation text="🤝 Designed and facilitated study groups and interactive workshops, fostering a collaborative and inclusive learning environment that encouraged peer-to-peer knowledge sharing." />
-              <TypingAnimation text="📋 Partnered with faculty to create tailored action plans for at-risk students, contributing to a measurable increase in student retention and success within the program." />
-              <TypingAnimation text="🌟 Developed mentorship frameworks and feedback systems to track and measure the progress of mentees, ensuring consistent improvement and personal growth." />
-              <TypingAnimation text="🔑 Acted as a bridge between students and faculty, advocating for student needs and promoting a culture of open communication and mutual respect." />
-              <TypingAnimation text="🗣️ Conducted motivational sessions and skill-building workshops on time management, effective study strategies, and career planning to empower students for long-term success." />
-              <TypingAnimation text="💻 Leveraged technology to create virtual support groups and online resources, ensuring accessibility and continuous learning for students in hybrid or remote settings." />
-              <TypingAnimation text="📚 Created structured learning modules and study materials tailored to diverse learning styles, making academic content more approachable and engaging." />
-              <TypingAnimation text="🌍 Encouraged a global mindset by mentoring students from diverse backgrounds, emphasizing cultural sensitivity and inclusivity in learning experiences." />
-              <TypingAnimation text="📈 Applied data-driven techniques to identify common academic challenges and proactively address them through customized solutions and resource allocation." />
-</ul>
+              <TypingAnimation text="🔧 Maintain and organize internal enterprise data systems" />
+              <TypingAnimation text="📊 Assist with data governance, compliance, and data quality processes" />
+              <TypingAnimation text="⚙️ Perform ETL, data transformation, storage, and data management tasks" />
+              <TypingAnimation text="📈 Generate reports and analyze business data for stakeholders" />
+              <TypingAnimation text="✅ Support data audits and data integrity checks" />
+              <TypingAnimation text="🤝 Contribute to team-based projects involving data tools and data platforms" />
+            </ul>
+            <h3>Sol Plaatje University</h3>
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Peer Mentor (2024)</p>
+            <ul style={{ textAlign: "left", display: "inline-block" }}>
+              <TypingAnimation text="🎓 Provided academic and personal support to 20+ first-time entering students" />
+              <TypingAnimation text="📚 Improved student study skills and academic performance" />
+              <TypingAnimation text="👥 Organized study groups and academic workshops" />
+              <TypingAnimation text="🤝 Collaborated with faculty to develop action plans for struggling students" />
+              <TypingAnimation text="💡 Demonstrated leadership, communication, mentoring, and documentation skills" />
+            </ul>
           </div>
         );
       case "education":
         return (
           <div>
             <h2>Education</h2>
-            <h3>Sol Plaatje University, Kimberley</h3>
-            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>BSc in Mathematical and Computer Sciences (January 2022 - November 2024)</p>
-            <p>Completed coursework encompassing a broad spectrum of topics in computer science, mathematics, and statistics, including:</p>
-            <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <li>📚 Computer Organization, Computer Architecture, Programming, Data Structures and Algorithms</li>
-              <li>📈 Algorithm Analysis and Program Design, Operating Systems, Artificial Intelligence, Database Systems</li>
-              <li>📐 Mathematical foundations in Algebra, Linear Algebra, Calculus, Advanced Calculus, Probability Theory, and Mathematical Analysis</li>
-              <li>📊 Statistical expertise in Statistical Inference, Regression Analysis, Non-Parametric Statistics, Time Series Analysis, and Generalized Linear Models</li>
-              <li>🔢 Proficiency in interdisciplinary topics such as Numerical Methods, Mathematical Modelling, and Markov Processes</li>
+            <h3>Sol Plaatje University</h3>
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>BSc Honours in Computer Science (2025 – Present)</p>
+            <p style={{ marginBottom: '1rem' }}>Studies paused due to full-time graduate trainee role</p>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Major:</p>
+            <ul style={{ textAlign: "left", display: "inline-block", marginBottom: '1rem' }}>
+              <li>💻 Software Engineering</li>
+            </ul>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Minor:</p>
+            <ul style={{ textAlign: "left", display: "inline-block", marginBottom: '1rem' }}>
+              <li>🤖 Artificial Intelligence</li>
+              <li>📊 Machine Learning</li>
+              <li>🔐 Security</li>
+            </ul>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Specialized Academic & Research Experience:</p>
+            <ul style={{ textAlign: "left", display: "inline-block", marginBottom: '1.5rem' }}>
+              <li>🧠 Applied Machine Learning</li>
+              <li>🕸️ Graph-based modeling using NetworkX</li>
+              <li>🔍 Explainable AI (SHAP, LIME)</li>
+              <li>⚠️ Anomaly detection</li>
+              <li>🎣 Phishing detection research</li>
+            </ul>
+            <h3>Sol Plaatje University</h3>
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>BSc Mathematical and Computer Sciences (2022 – 2024)</p>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Major:</p>
+            <ul style={{ textAlign: "left", display: "inline-block", marginBottom: '1rem' }}>
+              <li>💻 Computer Science</li>
+              <li>📊 Statistics</li>
+            </ul>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Minor:</p>
+            <ul style={{ textAlign: "left", display: "inline-block", marginBottom: '1rem' }}>
+              <li>📐 Mathematics</li>
+              <li>🔢 Applied Mathematics</li>
+            </ul>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Core Academic Foundations:</p>
+            <ul style={{ textAlign: "left", display: "inline-block", marginBottom: '1.5rem' }}>
+              <li>💻 Programming, Data Structures, Algorithms, Operating Systems</li>
+              <li>🗄️ Databases, Artificial Intelligence, Computer Architecture</li>
+              <li>📊 Probability Theory, Statistical Inference, Regression Analysis</li>
+              <li>📈 Time Series Analysis, Generalized Linear Models</li>
+              <li>📐 Linear Algebra, Calculus, Advanced Calculus, Mathematical Analysis</li>
             </ul>
             <h3>African Leadership Experience (ALX)</h3>
-            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Software Engineering (January 2023 - August 2024)</p>
-            <p>Completed a comprehensive program focused on modern backend development techniques and tools. Key areas of expertise include:</p>
+            <p style={{ marginBottom: '1rem', fontStyle: 'italic' }}>Software Engineering – Online (2023 – 2024)</p>
+            <p style={{ marginBottom: '0.5rem', fontWeight: '600' }}>Focus Areas:</p>
             <ul style={{ textAlign: "left", display: "inline-block" }}>
-              <li>💻 Languages & Frameworks: Modern JavaScript (ES6+), TypeScript, Node.js, Express.js, Python, C</li>
-              <li>🔧 Backend Development: Advanced MySQL, NoSQL, Redis, Queuing systems, caching, pagination, user authentication, and data security</li>
-              <li>⚙️ DevOps & Systems Engineering: Linux basics, web servers (Nginx), application servers, load balancing, monitoring, CI/CD, and web stack debugging</li>
+              <li>💻 Languages & Frameworks: JavaScript (ES6+), TypeScript, Node.js, Express.js, Python, C</li>
+              <li>🔧 Backend Engineering: MySQL, NoSQL databases, Redis, authentication, security, caching, pagination</li>
+              <li>⚙️ DevOps & Systems: Linux, Nginx, CI/CD pipelines, monitoring, load balancing, debugging</li>
             </ul>
           </div>
         );
