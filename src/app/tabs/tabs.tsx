@@ -14,7 +14,7 @@ const Tabs: React.FC = () => {
           <div>
             <h1>About Me</h1>
             <p style={{ fontStyle: 'normal', fontWeight: 'bold', letterSpacing: '2px', fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
-              Hi, I'm Lerato Mgwangqa, a Software Engineer with a strong foundation in Mathematical and Computer Sciences. My technical expertise spans Data Engineering, AI/ML, and Backend Systems, built on rigorous academic training in statistics, algorithms, and system architecture.
+              Hi, I&apos;m Lerato Mgwangqa, a Software Engineer with a strong foundation in Mathematical and Computer Sciences. My technical expertise spans Data Engineering, AI/ML, and Backend Systems, built on rigorous academic training in statistics, algorithms, and system architecture.
               <br /><br />
               I excel at designing scalable backend solutions, implementing intelligent systems using machine learning and NLP, and extracting actionable insights from complex datasets. My experience includes building full-stack applications with Node.js and React, developing ML-powered chatbots with Flask and Scikit-learn, and architecting database solutions using MySQL, MongoDB, and Redis.
               <br /><br />
