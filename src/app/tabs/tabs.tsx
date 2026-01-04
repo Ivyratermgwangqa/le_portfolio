@@ -14,13 +14,13 @@ const Tabs: React.FC = () => {
           <div>
             <h1>About Me</h1>
             <p style={{ fontStyle: 'normal', fontWeight: 'bold', letterSpacing: '2px', fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
-              Hi, I’m Lerato Mgwangqa, a passionate BSc graduate specializing in Mathematical and Computer Sciences. My journey began with a curiosity about how things work—from the logic behind algorithms to the beauty of mathematical patterns. Over the years, this curiosity has transformed into a passion for designing software and analyzing data to uncover insights that drive decisions.
+              Hi, I'm Lerato Mgwangqa, a Software Engineer with a strong foundation in Mathematical and Computer Sciences. My technical expertise spans Data Engineering, AI/ML, and Backend Systems, built on rigorous academic training in statistics, algorithms, and system architecture.
               <br /><br />
-              With a solid academic foundation and hands-on experience, I specialize in crafting efficient backend systems, unraveling statistical complexities, and bringing ideas to life through code. Whether it’s implementing secure user authentication, optimizing databases, or modeling real-world phenomena using time series, I embrace every challenge as an opportunity to grow.
+              I excel at designing scalable backend solutions, implementing intelligent systems using machine learning and NLP, and extracting actionable insights from complex datasets. My experience includes building full-stack applications with Node.js and React, developing ML-powered chatbots with Flask and Scikit-learn, and architecting database solutions using MySQL, MongoDB, and Redis.
               <br /><br />
-              What sets me apart? A love for learning, a solution-oriented mindset, and a unique blend of skills that combine programming, DevOps, and advanced statistics. I’m recognized for my ability to tackle complex problems with creativity, precision, and a constant drive to improve.
+              What drives me is systems thinking—approaching problems holistically, understanding how components interact, and architecting solutions that are both elegant and robust. I combine strong analytical skills from my mathematical background with practical software engineering to deliver production-ready applications. My approach is rooted in continuous learning, test-driven development, and writing clean, maintainable code.
               <br /><br />
-              When I’m not immersed in code or data, you’ll probably find me experimenting with new recipes, hiking the nearest trail, or playing strategy games. Let’s connect and create something extraordinary together!
+              Whether implementing REST APIs with secure authentication, performing statistical analysis on large datasets, or optimizing database queries, I bring precision, creativity, and a relentless focus on solving real-world problems through technology.
             </p>
           </div>
         );
