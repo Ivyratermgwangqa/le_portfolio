@@ -81,7 +81,6 @@ const Skills: React.FC = () => {
         { Icon: DiCode, label: "NLTK" },
         { Icon: DiCode, label: "NLP" },
         { Icon: DiCode, label: "Intent Classification" },
-        { Icon: DiCode, label: "Pandas" },
       ])
     },
     { label: "DevOps, Cloud & Tooling", 
